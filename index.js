@@ -1,10 +1,8 @@
 import validator from './validator.js';
 //Este código  utiliza el DOM (Document Object Model) para manipular elementos HTML.
 
-const input = document.getElementById("cardnumber");//obtiene un elemento HTML con un ID específico, "cardnumber", y lo asigna a la variable input.
-input.addEventListener("input", function() {//se agrega un event listener al elemento con la función addEventListener que escucha el evento "input". 
-  /*Cuando el evento "input" ocurre en el elemento (por ejemplo, cuando un usuario escribe algo en el campo de entrada),
-la función anónima proporcionada como argumento se ejecuta.*/
+const input = document.getElementById("cardnumber");
+input.addEventListener("input", function() {
   if (!/^\d+$/.test(this.value)) {/*
     La función verifica si el valor actual del elemento (accesible a través de this.value) cumple con el patrón de un 
     número. Se hace esto utilizando una expresión regular y la función test . Si el valor no es un número 

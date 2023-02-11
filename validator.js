@@ -13,9 +13,7 @@ const validator = {
         primer carácter de la cadena original. Esta operación se repite hasta que se haya concatenado toda la cadena original, de manera 
         que los caracteres originales se han invertido en el orden.*/
     }
-    const reverseCreditCardNumber=invertirCadena(creditCardNumber);/*se invoca la función invertirCadena con la
-     cadena creditCardNumber y se asigna el resultado a la variable
-    reverseCreditCardNumber. La variable reverseCreditCardNumber contiene la cadena invertida.*/
+    const reverseCreditCardNumber=invertirCadena(creditCardNumber);// La variable reverseCreditCardNumber contiene la cadena invertida.*/
     const amountOfTours=creditCardNumber.length;
     let SumOffOddPositions=0;
     let SumOffEvenPositions=0;
@@ -58,8 +56,7 @@ const validator = {
     const length = creditCardNumber.length; //se asigna la longitud de caracteres ingresados a la variable lenght
     if(length<5){  // si la longitud es menor a 5 ,retorna el numero original sin maskify
       return creditCardNumber;
-    }   // si no se cumple la condicion me retorna # por  cada caracter ingresado - 4 caracteres, despues se concatena 
-    // solo con los ultimos 4 caracteres 
+    }  
     return "#".repeat(length - 4) + creditCardNumber.substring(length - 4);
     /* ¿DE QUE MANERA ACTUA EL SUBSTRING, como sabe que son 4 nmeros de la derecha los que debe cortar?
 El substringmétodo toma dos argumentos: el índice inicial y el índice final (que es opcional). El índice inicial se define como length - 4, 
