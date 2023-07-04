@@ -8,6 +8,7 @@ const validator = {
       else
         return invertirCadena(creditCardNumber.substr(1)) + creditCardNumber.charAt(0);
     }
+    
     const reverseCreditCardNumber=invertirCadena(creditCardNumber);// La variable reverseCreditCardNumber contiene la cadena invertida.
     const amountOfTours=creditCardNumber.length;
     let SumOffOddPositions=0;

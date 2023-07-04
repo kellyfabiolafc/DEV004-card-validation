@@ -8,6 +8,7 @@ input.addEventListener("input", function() {
   }
 });
 
+
 const form = document.getElementById("myForm");
 form.addEventListener("submit", function(event) {//La función comprueba si el campo "cardnumber" está vacío. 
   const input = document.getElementById("cardnumber");
