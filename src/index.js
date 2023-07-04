@@ -1,5 +1,4 @@
 import validator from './validator.js';
-const sectionAll = document.querySelectorAll('section[id]');
 //Este código  utiliza el DOM (Document Object Model) para manipular elementos HTML.
 const input = document.getElementById("cardnumber");
 input.addEventListener("input", function() {
@@ -60,18 +59,3 @@ form.addEventListener("submit", function(event) {//La función comprueba si el c
   //}
 });
 
-// Obtén todos los enlaces del menú
-const menuLinks = document.querySelectorAll('nav ul li a');
-
-// Recorre los enlaces y agrega el evento click
-menuLinks.forEach((link) => {
-  link.addEventListener('click', (event) => {
-    // Elimina la clase activa de todos los enlaces
-    menuLinks.forEach((link) => {
-      link.classList.remove('active');
-    });
-        
-    // Agrega la clase activa al enlace actual
-    event.target.classList.add('active');
-  });
-});
